@@ -1,0 +1,9 @@
+version: "3"
+services: 
+  nginx:
+    image: nginx:latest
+    ports: 
+      - "8888:8888"
+      - "9999:9999"
+    volumes:
+      - .:/etc/nginx/
